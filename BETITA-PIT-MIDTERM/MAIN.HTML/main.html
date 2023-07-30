@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USTP WEBSITE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Serif:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<style>
+    *{
+        font-family:Poppins;
+        box-sizing: border-box;
+        margin: 0 0;
+    }
+    .main{
+        display: flex;
+        background-color:rgb(13, 13, 102);
+        width: 100;
+        justify-content: center;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+    .nav-container{
+        width: 80%;
+        background-color: rgb(13, 13, 102);
+        display: flex;
+        align-items: inline-flex;
+        justify-content: space-between;
+    }
+    nav ul{
+        list-style: none;
+    }
+    nav ul li{
+       display: inline-flex;
+    }
+    nav ul li a{
+        margin-left: 5px;
+        color:white;
+        font-size: .8rem;
+        text-decoration: none;
+    }
+    nav ul li i{
+        margin-left: 5px;
+    }
+    .fa-solid{
+        margin-right: 5px;
+    }
+    .nav-icon i{
+        margin-left: 20px;
+        color: white;
+    }
+  .container2 {
+    display: flex;
+    align-items: center;
+  }
+
+  .image {
+    display: flex;
+    align-items: center;
+  }
+
+  .text {
+    margin-left: 500px; /* Adjust the value as needed */
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Remove text decoration from <a> element */
+  ul li a {
+    text-decoration: none;
+  }
+  .text2{
+    margin-left: 20px;
+  }
+  ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  .text3{
+    margin-left: 25px;
+  }
+  .text4{
+    margin-left: 20px;
+  }
+  .video {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 400px; /* Adjust the height as needed */
+      overflow: hidden;
+      
+    }
+
+    video {
+      max-width: 100%;
+      max-height: 100%;
+      
+    }
+    .sponsored-image {
+      width: 200px;
+      margin-left: 150px;
+      height:auto;
+     
+      
+    }
+    .sponsored-container {
+      text-align: center; 
+    }
+    .elementor-widget-container{
+      padding: 15px 15px 15px 0;
+      border-radius: 10px 10px 10px 10px;
+      background-color: #1a1851;  
+      text-align: right;   
+      color: aliceblue;
+      font-family:'Roboto Serif', serif;
+      font-size: 30px;
+      
+    }
+    .about{
+      font-size: 20px;
+      font-weight: 300;
+      font-family:'Poppins', sans-serif;
+      text-align: justify;
+      margin-top: 20px;
+    }
+    .about p + p{
+      margin-top: 10px;
+    }
+    .about p{
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .learn-more{
+      padding: 20px 24px;
+      border-radius: 3px;
+      text-align: center;
+      background-color:  #1a1851;
+      box-sizing: border-box;
+      text-align: justify;
+      line-height: 1px;
+      color: rgb(251, 195, 53);
+      margin-left: 84%;
+      
+    }
+    .elementor-learn-more{
+      text-align: right;
+    }
+    .advertise-image {
+      width: 100px;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 40px;    
+    }
+    .advertise-container{
+      text-align: center; 
+    }
+    .updates-container{
+      padding: 15px 15px 15px 0;
+      text-align: left;   
+      color: #1A1851;
+      font-family:'Roboto Serif', serif;
+      font-size: 50px;
+      margin-left: 20px;
+      margin-top: 30px;
+      font-weight: 300px;
+    }  
+    .update-picture{
+      text-align: center;
+    }
+    .view-previous-container{
+      padding: 5px 5px;
+      border-radius: 10px 10px 10px 10px;
+      background-color: #1a1851;    
+      color:rgb(251, 195, 53);
+      font-family:'Roboto Serif', serif;
+      font-size: 20px;
+      margin-left: 95px;
+      margin-right: 95px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      
+      
+    }
+    .view-previous-update {
+    flex: 1; 
+    text-align: center; 
+    }
+    .media-container{  
+      margin-left: 20px;
+      margin-top: 30px;
+      
+    }
+    .media{
+      font-family:'Poppins';
+      font-size: 40px;
+      color: #1A1851;
+      font-weight: bold;
+    }
+     .media-picture{
+      text-align: center;
+     }
+     .pres-corner{
+      padding: 5px 5px 5px 0;
+      border-radius: 10px 10px 10px 10px;
+      background-color: #1a1851;  
+      text-align: right;   
+      color: aliceblue;
+      font-family: sans-serif;
+      font-size: 25px;
+      font-weight: bold;
+      
+     }
+     .president-pic{
+      text-align: center;
+     }
+    .pres-container{
+      text-align: center;
+    }
+    .campus-container{
+      text-align: center;
+      font-size: 39px;
+      color: #1A1851
+      
+    }
+    .ustp-campuses{
+      font-weight: bolder;
+    }
+    .elementor-widget-container {
+    padding: 5px 5px 5px 0;
+    background-color: #1a1851;
+    border-radius: 10px 10px 10px 10px;
+  }
+  .elementor-image img {
+    width: 700px; /* Set the desired small size here */
+    height: auto; /* This will maintain the aspect ratio */
+    margin-top: 30px;
+    margin-left: 30px;
+    
+  }
+  
+  .main-container {
+    display: flex; /* Use flexbox to position containers beside each other */
+    align-items: flex-start; /* Align items to the top */
+  }
+
+  .alubijid-container {
+    margin-right: 50px; /* Add some space between the containers */
+  }
+
+  .elementor-image img {
+    width: 680px; /* Set the desired small size here */
+    height: auto; /* This will maintain the aspect ratio */
+    border: 2px solid black; /* Add a border of 2 pixels, solid, and black color */
+  }
+  .ustp-container{
+    margin-top: 50px;
+    font-size: 29px;
+    color: #1A1851;
+    
+  }
+  .ustp-container h4 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow to the text with the given values */
+  }
+  .ustp-container p{
+    color: black;
+    font-family: 'Poppins',sans-serif; 
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+  }
+  p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    
+}
+.elementor-button {
+    fill: #fcb316;
+    color: #fcb316;
+    background-color: #1a1851;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
+}
+ .elementor-widget-button .elementor-button{
+  font-family: sans-serif;
+  font-weight: 500;
+ }
+ .elementor-align-left .elementor-button {
+    width: auto;
+    
+}
+.elementor-button {
+    display: inline-block;
+    line-height: 1;
+    background-color: #1a1851;
+    font-size: 15px;
+    padding: 12px 24px;
+    border-radius: 3px;
+    color: #fcb316;
+    fill: #fff;
+    text-align: center;
+    transition: all .3s;
+}
+.elementor-button-wrapper {
+    display: flex;
+    justify-content: center; /* Center its content horizontally */
+    position: relative;
+    display: block;
+  }
+
+  /* Optional: Add some spacing to the button */
+  .elementor-button-wrapper .elementor-button {
+    padding: 10px 20px;
+    background-color: #1a1851;
+    color: #fcb316;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  .ustp-container1{
+    margin-top: 50px;
+    font-size: 25px;  
+    padding: 5px 5px 5px 0;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #1a1851;
+    text-align: right;
+    color: aliceblue;
+    font-family: 'Roboto Serif', serif;
+    font-size: bold;
+   
+ }
+  .pic-container {
+    display: flex; /* Use flexbox to position containers beside each other */
+    align-items: flex-start;
+    margin-left: 50px;
+}
+  .cdo-container {
+    margin-right: 50px; /* Add some space between the containers */
+}
+  .cdo-container{
+    margin-left: 10px;
+    margin-top: 50px;
+    font-size: 29px;
+    color: #1A1851;
+  }
+  .cdo-image img{
+    margin-top: 5px;
+    margin-left: 80px;
+    border: 2px solid black;
+    width: 580px;
+    aspect-ratio: auto 1280 / 720;
+    height: 330px;
+  }
+  .Cagayan-container{
+    margin-top: 50px;
+    font-size: 15px;
+    color: #1A1851;
+    font-weight: 100;
+  }
+  .Cagayan-container h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+  }
+  .Cagayan-container p{
+    color: black;
+    font-family: 'Poppins',sans-serif; 
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: left;
+  }
+  .p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: justify;
+    
+}
+/*VISIT USTP CAGAYAN AND VIEW 360 VIRTUAL TOUR*/
+.elementor-45121 .elementor-element.elementor-element-8d4742a>.elementor-widget-container {
+    margin: -15px 0 0;
+}
+
+
+</style>
+
+
+</head>
+<body>
+    <header>
+    <div class="main">
+        <div class="nav-container">
+            <nav>
+                <ul class="navigation-container">
+                  <li><a class="fa-solid fa-arrow-up-right-from-square">Career Center</a></li>
+                  <li><a class="fa-solid fa-arrow-up-right-from-square">Student Affairs</a></li>
+                  <li><a class="fa-solid fa-arrow-up-right-from-square">Alumni Affairs</a></li>
+                  <li><a class="fa-solid fa-arrow-up-right-from-square">Employees</a></li>
+                  <li><a class="fa-solid fa-arrow-up-right-from-square">Covid-19</a></li>
+                  
+                </ul>
+              </nav>
+              
+            <div class="nav-icon">
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                 
+                
+            </div>
+
+        </div>
+    </div>
+    <div class="container2">
+        <div class="image">
+          <li><img class="logo" src="ustp logo.png" alt="logo"></li>
+          <div class="text">
+            <ul>
+              <li><a href="#">About<i class="fa-solid fa-angle-down"></a></i>  
+          </div>
+            </li>
+          <div class="text2">
+            <ul>
+              <li><a href="#">Academics<i class="fa-solid fa-angle-down"></i></a>
+              </li>
+            </ul>
+
+          </div>
+          <div class="text3">
+            <ul>
+              <li><a href="#">Research, Innovation & Entrepreneurship<i class="fa-solid fa-angle-down"></i></a>
+              </li>
+            </ul>
+          </div> 
+          <div class="text4">
+            <ul>
+              <li><a href="#">Global<i class="fa-solid fa-angle-down"></i></a>
+              </li>
+            </ul>
+          </div> 
+          <div class="text4">
+            <ul>
+              <li><a href="#">Updates<i class="fa-solid fa-angle-down"></i></a>
+              </li>
+            </ul>
+        </div>
+        <div class="text4">
+          <ul>
+            <li><a href="#">Services<i class="fa-solid fa-angle-down"></i></a>
+            </li>
+          </ul>
+      </div>
+      </div>
+      </div>
+      <div class="video">
+        <video autoplay loop>
+          <source src="banner.mp4" type="video/mp4">
+        </video>
+       
+      </div>
+      <div class="sponsored-container">
+        <div class="sponsored-image">
+          <img src="logo.png" alt="Sponsored Image">
+        </div>
+      </div>
+      <div class="elementor-widget-container">
+        <h3 class="elementor-heading-title elementor-size-default">ABOUT USTP</h3> 
+      </div>
+      <div class="about USTP">
+       <p>The University of Science and Technology of Southern Philippines (USTP) is a state university established on August 16, 2016, by virtue of Republic Act 10919 through the amalgamation of the Mindanao University of Science and Technology (MUST) in Cagayan de Oro City, Misamis Oriental and the Misamis Oriental State College of Agriculture and Technology (MOSCAT) in Claveria, Misamis Oriental. It is located in Northern Mindanao, the Gateway to Mindanao, which offers a strategic locational advantage for the institution to train and develop students from all the other regions.</p>
+       <p>Adhering to its general mandate to primarily provide advanced education; higher technological, professional, and advanced instruction; and advanced research and extension work, required for global competitiveness, the University envisions becoming a nationally recognized S&T University providing the vital link between education and the economy. As the university fulfills this mandate, it moves from within its immediate context and toward its larger international environment, as the first and only national university of science and technology in the country. It will operate as such that it will have seamless knowledge and collaboration with its stakeholders in the private and public sectors, the labor market, business, and industry.</p>
+      </div>
+      <div class="learn-more">
+        <h4 class="elementor-learn-more">Learn more about USTP</h4> 
+      </div>
+      <div class="advertise-container">
+        <div class="advertise-image">
+          <img src="advertise.jpg" alt="advertise">
+        </div>
+      </div>
+      <div class="updates-container">
+        <h5 class="Updates">USTP Updates</h5> 
+      </div>
+      <div class="update-picture-container">
+        <div class="update-picture">
+          <img src="pics.jpg" alt="update-picture-container">
+          <img src="pics2.jpg" alt="update-picture-container">
+          <img src="pics3.jpg" alt="update-picture-container">
+          <img src="pics4.jpg" alt="update-picture-container">
+        </div>
+      </div>
+      <div class="view-previous-container">
+        <h6 class="view-previous-update">View previous USTP Updates</h6> 
+        <i aria-hidden="true" class="fas fa-directions"></i>
+    </div>
+    <div class="media-container">
+      <h7 class="media">USTP Media</h7> 
+    </div>
+    <div class="media-picture-container">
+      <div class="media-picture">
+        <img src="media-pic3.jpg" alt="media-picture">
+      </div>
+    </div>
+    <div class="pres-container">
+    <div class="pres-corner">
+      <h8 class="president">THE PRESIDENT'S CORNER</h8> 
+    </div>
+  </div>
+    <div class="president-picture-container">
+      <div class="president-pic">
+        <img src="president-pic.jpg" alt="president-pic">
+
+      </div>
+    </div>
+    <div class="campus-container">
+      <h5 class="ustp-campuses">USTP SYSTEM CAMPUSES</h5> 
+    </div>
+    <div class="elementor-widget-container">
+      <h9 class="elementor-heading-title elementor-size-default">Main Campus</h9> 
+    </div>
+    <div class="main-container">
+      <div class="alubijid-container">
+        <div class="elementor-image">
+          <img src="Alubijid.png" alt="elementor-image">
+        </div>
+      </div>
+    
+      <div class="ustp-container">
+        <h4 class="elementor-heading-title elementor-size-default">USTP ALUBIJID</h4> 
+        <p>USTP Alubijid is considered the Main Campus of the University of Science and Technology of Southern Philippines. It is strategically located at the center of Western Misamis Oriental in Barangay Lourdes, Alubijid.</p>
+        <p>It has a total land area of 292 hectares and is where the AGILA Science and Technology Park will soon rise. USTP Alubijid offers the following programs: Bachelor of Science in Computer Engineering, Bachelor of Science in Civil Engineering, and Bachelor of Science in Computer Science.</p>
+    
+    <div class="elementor-element elementor-element-bd8d04d elementor-align-left elementor-widget elementor-widget-button" data-id="bd8d04d" data-element_type="widget" data-widget_type="button.default">
+      <div class="elementor-button-wrapper">
+      <a class="elementor-button elementor-button-link elementor-size-sm" href="https://www.ustp.edu.ph/alubijid">
+      <span class="elementor-button-content-wrapper">
+      <span class="elementor-button-text">Visit USTP Alubijid</span>
+      </span>
+      </a>
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="ustp-container1">
+    <h9 class="elementor-heading-title elementor-size-default">MAJOR CAMPUSES</h9> 
+  </div>
+  <div class="pic-container">
+    <div class="cdo-container">
+      <div class="cdo-image">
+        <img src="USTP-CDO.jpg" alt="cdo-image">
+      </div>
+    </div>
+    <div class="Cagayan-container">
+      <h1 class="elementor-heading-title elementor-size-default">USTP CAGAYAN DE ORO</h1> 
+      <p>USTP Cagayan de Oro is one of the university system’s major campuses strategically located at the center of the City of Golden Friendship with a total land area of 9 hectares.</p>
+      <p>The campus is CHED-recognized as a Center of Excellence in Information Technology and Center of Development in Electrical Engineering and Mathematics. It is also acknowledged as a Top 4 Performing SUC with the Highest Number of Level III Accredited Programs in 2020 as adjudged by the AACCUP, Inc. Its niche programs include Bachelor of Science in Electrical Engineering, Bachelor of Science in Information Technology, and Bachelor of Science in Applied Mathematics.</p>
+    </div>
+      <div class="elementor-widget-container">
+        <div class="elementor-button-wrapper">
+        <a class="elementor-button elementor-button-link elementor-size-sm" href="https://www.ustp.edu.ph/cdeo">
+        <span class="elementor-button-content-wrapper">
+        <span class="elementor-button-text">Visit USTP Cagayan de Oro</span>
+        </span>
+        </a>
+        </div>
+        </div>
+    </header>
+</body>
+</html>
